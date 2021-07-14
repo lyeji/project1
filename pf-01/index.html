@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jju_home </title>
+    <link rel="shoutcut icon" href="images/fv.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <script src="script/jquery-1.11.3.js"></script>
+    <script src="script/jquery.innerfade.js"></script>
+    <script>
+        // 페이드인아웃 - 플러그인
+        $(function(){
+            $('.inner-fade').innerfade({Animationtype:'fade',
+                timeout:2000 
+                //2000 -> 2초
+            });})
+
+    </script>
+</head>
+<body>
+    <!-- #wrap>header+section.me+section.photo+footer -->
+    <div id="wrap">
+        <header>
+            <!-- .logo>a{YEJI}+.menu -->
+            <div class="logo">
+                <!-- a{YEJI} -->
+                <a href="index.html"><img src="images/logo_jju.png" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <!-- ul>li*4>a{menu} -->
+                <ul>
+                    <li><a href="video.html">STORY</a></li>
+                    <li><a href="gallery.html">NO EAT</a></li>
+                    <li><a href="card.html">PRESENT</a></li>
+                    <li><a href="bbs.html">NOTICE</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="me">
+            <h1 class="blind">슬라이더</h1>
+           <ul class="inner-fade">
+               <li><a href="#"><img src="images/mainslider1.png" alt="메인슬라이더1"></a></li>
+               <li><a href="card.html"><img src="images/mainslider2.png" alt="메인슬라이더2"></a></li>
+               <li><a href="#"><img src="images/mainslider3.png" alt="메인슬라이더3"></a></li>
+           </ul>
+        </section> 
+        <section class="info">
+            <!-- .notice+.banner -->
+            <div class="notice">
+                <h1>공지사항</h1>
+                <!-- ul>li>span.t+a+span -->
+                <ul>
+                    <li><span class="a1">[갤러리]</span><a href="#"> 귀여운거 다 모아뒀어요, 오세요~</a><span>21-03-12</span></li>
+                    <li><span class="a1">[갤러리]</span><a href="#"> 배경사진으로 사용하실 수 있어요!</a><span>21-03-12</span></li>
+                    <li><span class="a1">[갤러리]</span><a href="video.html">100일 기념으로 첫 뒤집기를 했어요:></a><span>21-03-12</span></li>
+                    <li><span class="a2">[스케줄]</span><a href="card.html"> 곧 있을 행사일정입니다! 필독!!</a><span>21-03-12</span></li>
+                    <li><span class="a2">[스케줄]</span><a href="card.html"> 초대장이에요, 꼭 지참해주세요~ </a><span>21-03-12</span></li>
+                    <li><span class="a2">[스케줄]</span><a href="card.html"> 초대장이에요, 꼭 지참해주세요~</a><span>21-03-12</span></li>
+                    <li><span class="a3">[투데이]</span><a href="#"> 오늘 사진 받아요, 업로드 꼭꼭!</a><span>21-03-12</span></li>
+                
+                </ul>
+            </div>
+            <div class="banner">
+                <!-- a>img -->
+                <a href="#"><img src="images/banner.png" alt="배너"></a>
+            </div>
+        </section>    
+        <section class="photo">
+            <h1 class="blind">하단배너</h1>
+            <a href="gallery.html"><img src="images/photo1.png" alt="img1"></a>
+            <a href="gallery.html"><img src="images/photo2.png" alt="img2"></a>
+            <a href="gallery.html"><img src="images/photo3.png" alt="img3"></a>
+            <a href="gallery.html"><img src="images/photo4.png" alt="img4"></a>
+            <a href="gallery.html"><img src="images/photo5.png" alt="img5"></a>
+            <a href="gallery.html"><img src="images/photo6.png" alt="img6"></a>
+        </section>
+        <footer>
+            <div class="blogo"><a href="index.html"><img src="images/blogo_jju.png" alt="blogo"></a> </div>
+            <div class="copyright">
+            <p>
+                Jju homepage / 페이지 관리자 : 이예지 <br />
+                Copyright &copy; 2021  
+                <a href="mailto:yeji7455@gmail.com">Jju</a> 
+                All Rights Reserved.
+            </p>
+            </div>
+            <div class="sns">
+                <!-- ul>li>a>img -->
+                <ul>
+                    <li><a href="https://www.naver.com/"><img src="images/sns_b.png" alt="밴드"></a></li>
+                    <li><a href="www.facebook.com"><img src="images/sns_f.png" alt="페이스북"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="images/sns_i.png" alt="인스타"></a></li>
+                    <li><a href="twitter.com"><img src="images/sns_t.png" alt="트위터"></a></li>
+                    <li><a href="www.youtube.com"><img src="images/sns_y.png" alt="유튜브"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

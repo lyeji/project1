@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+/* reset */
+* {margin: 0; padding: 0;}
+body {background: #fff}
+ul, li{ margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none;} /* text-decoration: none; -링크 줄 없애기 */
+#wrap {width: 1200px; margin: 0 auto;}
+
+.blind {position: absolute; top: 0; left: 0;
+        overflow: hidden; text-indent: -9999999px;
+        width: 0; height: 0; font-size: 0;}
+
+    /* margin: 50px 30px 50px 150px;}<- 상, 오, 하, 왼 순서 */
+    /* margin: 0 auto; <- 상,하 0 + 좌,우 auto : 중양정렬 */
+
+/* header */
+#wrap header {height: 120px; background: #fff; margin-top: 0px;}
+#wrap header .logo{width:300px; height: 120px; float:left;}
+#wrap header .logo a{font-size:30px; line-height: 120px;
+font-weight: bold; color:#000; }
+#wrap header .logo a:hover {color:pink;}
+
+/* menu */
+#wrap header .menu{width: 900px; height: 120px; background: #fff; float: left;}
+#wrap header .menu ul {float: right;}
+#wrap header .menu ul li{float:left; margin-right: 50px;
+height: 120px; line-height: 120px;}
+
+#wrap header .menu ul li a{color:#5f463e;
+    font-size:20px; font-weight: bold;  font-family: 'Balsamiq Sans', cursive; }
+    
+    #wrap header .menu ul li a:hover{color:#f9754a;
+    border-bottom:2px solid #f9754a;
+    padding-bottom:5px;
+    }
+
+    #wrap section {height: 1100px; background: #fff; border-top: 1px solid #999;}
+
+/* 왼쪽메뉴 */
+#wrap section aside {float: left; width: 250px; height: 1100px; background: #ddd;}
+#wrap section aside .subimg1 {
+    width: 250px; height: 215px; 
+    background: url('../images/bbs/sub1.png');
+    position: relative;
+    /*  position: relative; -> 기준점 잡기 */
+}
+
+#wrap section aside .subimg1 p {
+    color:#fff; font-size:23px;
+    font-weight: bold;
+    position: absolute; top:60px; left:65px;
+}
+
+/* 왼쪽메뉴 */
+#wrap section aside .lnb {
+    width: 250px; height: 885px;
+    background: #fff;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+}
+
+#wrap section aside .lnb ul.nav li {
+    height: 45px; line-height: 45px; 
+    text-align: center;
+    font-size:15px; 
+    border-bottom:1px solid #d1d1d1;
+    box-sizing: border-box;
+}
+#wrap section aside .lnb ul.nav li a {
+    display: block;
+    color:#666;
+    font-weight: bold;
+}
+#wrap section aside .lnb ul.nav li a:hover {
+    color:#000; background: #e6e6e6;
+}
+#wrap section aside .lnb ul.nav li a:focus {
+    color:#000; background: #ddd;
+}
+
+/* 게시판 */
+#wrap section #contents {float: left; width: 950px; height: 1100px; background: #fff;}
+#wrap section #contents h1 {
+color:#000;
+font-size:27px; 
+font-weight: bold;
+margin:40px 0 30px 70px;
+}
+.viewbox{width: 795px;
+    height: 145px;
+    font-size:13px;
+    border:3px solid #eaeaea;
+    margin:20px 0 20px 70px; 
+    background: #fafafa;
+    position: relative;
+}
+.viewbox dl.boxmenu1{width: 705px;
+padding:16px 0 0 16px;} 
+.viewbox dl.boxmenu1 dt img:hover{opacity: 0.5;}
+.viewbox dl.boxmenu1 dd{
+    position: absolute; top:40px; left:350px; 
+    font-size:20px; color:#696969; 
+    font-weight: bold;
+}
+.viewbox dl.boxmenu1 dd a{color:#333;}
+.viewbox dl.boxmenu1 dd a:hover{color:#999;}
+.viewbox dl.boxmenu1 dd a span{font-size:13px;}
+
+/* 게시판 */
+#wrap section #contents table {
+    width: 800px; font-size:13px; 
+    margin-left: 70px;
+    border-top:2px solid #a3a3a3;
+    border-bottom:2px solid #a3a3a3;
+    border-collapse:collapse; /* 표 사이 붙이기 */
+}
+#wrap section #contents table tr th {
+    height: 34px; 
+    background: #ff6633;
+    border-bottom:1px solid #a3a3a3;
+    text-align: center;
+}
+#wrap section #contents table tr:hover {
+    background: #f6f6f6;
+}
+#wrap section #contents table tr img {
+    vertical-align: middle;
+}
+#wrap section #contents table tr td {
+    height: 31px; border-bottom:1px solid #e2e2e2;
+    text-align: center;
+}
+#wrap section #contents table tr td img{
+    vertical-align: middle;
+}
+#wrap section #contents table tr td.title {
+    text-align: left;
+}
+#wrap section #contents table tr td.title a{
+    color:#666;
+}
+
+#wrap section #contents table .gray {
+    color:#999; font-size:11px;
+}
+
+/* page */
+#wrap section #contents p.page {
+    width: 800px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    color:#999;
+    padding: 10px;
+    margin-left:70px;
+
+}
+#wrap section #contents p.page a{
+    padding: 0 3px;
+    font-size:12px;
+    color:#666;
+
+}
+#wrap section #contents p.page a:hover{
+    color:#ddd; 
+}
+
+
+/* search */
+#wrap section #contents fieldset {
+    border:none;
+}
+
+#wrap section #contents .search {
+    position: relative; z-index: 9999999999;
+    width: 780px;
+    text-align:center;
+    margin: 0 0 80px 70px;
+    padding: 13px 20px 13px 0;
+    background: url(../images/bbs/board_search_title.gif)no-repeat 20px 100%;
+}
+#wrap section #contents .search select {
+    height: 23px;
+    margin-left: 5px;
+    border:1px solid #e2e2e2;
+    vertical-align:middle;
+}
+#wrap section #contents .search input {
+    padding-left: 7px;
+    margin-left: 5px; 
+    vertical-align:middle;
+
+}
+#wrap section #contents .search input.box { 
+    height: 23px; border:1px solid #e2e2e2;
+}
+
+#wrap section #contents .search input.search_img {
+position: absolute; left:595px; top:15px;
+}
+
+#wrap section #contents .search {
+    position: relative; z-index: 9999999999;
+    width: 780px;
+    text-align:center;
+    margin: 0 0 80px 70px;
+    padding: 13px 20px 13px 0;
+    background: url(../images/bbs/board_search_title.gif)no-repeat 20px 100%;
+    border:1px solid #e2e2e2;
+}   
+        
+
+    
+    /* footer */ 
+    #wrap footer {height: 120px; 
+    /* border-top:1px solid #999; */
+    /* background: #fff; */
+    /* box-sizing: border-box; */
+    /* box-sizing: border-box;
+    여백과 선을 기본 사이즈에 포함 */
+    }
+    #wrap footer .blogo {width: 250px; height: 120px; float: left; padding-top: 12px;} 
+    #wrap footer .blogo .a {display: block;  margin-top: 50px; font-size: 25px; color: #999; font-weight: 600;}
+    #wrap footer .copyright {width: 700px; height: 120px; float: left;} 
+    #wrap footer .copyright p {line-height: 1.6; font-size:14px; 
+    color:#999; text-align: center; margin-top: 20px;}
+    #wrap footer .copyright p a {color:#000;}
+    #wrap footer .copyright p a:hover { color:#999;
+        text-decoration: underline; /* 링크에 라인 넣기 */ }
+    
+    #wrap footer .sns {width: 250px; height: 120px; float: left;} 
+    #wrap footer .sns ul {float: right;} 
+    #wrap footer .sns ul li{float: left; margin: 30px 0 0 10px;} 
+    #wrap footer .sns ul li img:hover{opacity: 0.5;} 
