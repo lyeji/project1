@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* reset */
+*{margin: 0; padding: 0;}
+ul,li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none;}
+
+#wrap {width: 1200px; margin: 0 auto; position: relative;}
+#wrap header {width: 1200px; height: 330px; position: relative;}
+#wrap header .logo img {position: absolute; left: 0; top: 10px; width: 100px;}
+#wrap header .topNav {position: absolute; right: 0; top: 15px;}
+#wrap header .topNav ul li {float: left;}
+#wrap header .topNav ul li a {background: #e71a0f; margin-right: 3px; 
+    border-radius: 30px; box-sizing: border-box; padding: 6px 18px; font-size: 10px; color: #fff;}
+#wrap header .topNav ul li a:hover {background: #666;}
+#wrap header .topNav ul li.sr {border: 1px solid #e71a0f; border-radius: 30px;}
+#wrap header .topNav ul li input {width: 100px; border-radius: 50px; height: 23px; padding-left: 5px;}
+#wrap header .topNav ul li .input-text {border: none;}
+#wrap header .topNav ul li .input-text:focus {outline: none;}
+#wrap header .topNav ul li .input-img {width: 18px; height: 18px; vertical-align: middle; margin-right: 10px;}
+
+#wrap header .menu {width: 1200px; height: 100px; position: absolute; top: 50px;}
+#wrap header .menu ul li {float: left; margin: 25px 1px 0 0; 
+    width: 199px; height: 50px; line-height: 50px; text-align: center;}
+#wrap header .menu ul li a {display: block; background: #000; box-sizing: border-box; 
+    font-size: 15px; font-weight: bold; color: #fff; transition: .3s;}
+#wrap header .menu ul li a:hover {background: #e71a0f; border-top: 3px solid #000;}
+#wrap header .menu ul li a.gr {background: linear-gradient(140deg, #f83200,#e14fad 60%,#b334ef, #ff4e50, #ff9a44);}
+
+#wrap header .slider {width: 1200px; height: 200px; position: relative; top: 130px; overflow: hidden;}
+#wrap header .slider>div {position: absolute; top: 0; left: 0;}
+#wrap header .slider>div img {display: block;}
+#wrap header .slider .sliderList {width: 3600px;}
+#wrap header .slider .sliderList .sliderImg {float: left;}
+
+#wrap #contents .con {min-width: 1200px; width: 100%; background: #000; padding-top: 24px;}
+#wrap #contents .con ul {width: 1200px; margin: 0px auto; overflow: hidden;}
+#wrap #contents .con ul li {float: left; width: 18.5%; margin-left: 1%;}
+#wrap #contents .con ul li:first-child {margin-left: 20px;}
+.con ul li a p.img {width: 100%; height: auto; overflow: hidden; position: relative;}
+.con ul li a p.img:before {content: ''; width: 0; height: 100%; background: #000; 
+    position: absolute; top: 0; left: 0;}
+.con ul li a p.img img {width: 100%;}
+.con ul li a:hover p.img:before {width: 100%; transition: all; opacity: .8;}
+.con ul li a p.img:after {content: '예매하기'; color: #fff; font-weight: bold; 
+    background: #e71a0f; padding: 8px 20px; border-radius: 50px;
+    transition: all; position: absolute; top: 50%; left:50%; 
+    opacity: 0; transform: translate(-50%,-50%);}
+.con ul li a:hover p.img:after {opacity: 1;}
+.con ul li a .title {padding-bottom: 20px;}
+.con ul li a .title p.t {font-size: 18px; font-weight: 600; color: #fff; text-align: center;}
+.con ul li a .title p.b {font-size: 12px; font-weight: 500; color: #fff; text-align: center;}
+
+
+#wrap #contents .banner {width: 1200px; height: 140px; background: #ddd; border-top: 3px solid #e71a0f;}
+#wrap #contents .banner img {display: block; float: left;}
+
+#wrap footer {width: 1200px; height: 100px;}
+#wrap footer .bright {width: 1000px; height: 100px; float: left;}
+#wrap footer .sns {width: 200px; height: 100px; float: right;}
+
+#wrap footer ul.bmenu {height: 50px; float: left; padding-left: 120px;}
+#wrap footer ul.bmenu li {float: left; height: 100px; margin-top: 20px;}
+#wrap footer ul.bmenu li a {font-size: 14px; color: #444; padding: 3px 8px 3px 8px; font-weight: bold;}
+#wrap footer ul.bmenu li a.red {color: #f83200;}
+#wrap footer ul.bmenu li a:hover {color: #e71a0f; border-bottom: 1px solid #ddd;}
+#wrap footer img.blogo {width: 110px; float: left; position: absolute; left: 0; bottom: 24px;}
+#wrap footer p {width: 1200px; height: 50px; float: left; font-size: 12px; margin: 8px 0 0 130px;}
+#wrap footer ul.sns {padding-top: 24px;}
+#wrap footer ul.sns li {float: left; margin-left: 10px;}
+
+#quick {width: 110px; height: 540px; border: 1px dashed #e71a0f; border-radius: 70px;
+    position: absolute; top: 150px; left: 1220px;}
+#quick a {padding: 0px 0px 5px 5px;}
+#quick a:hover {opacity: .7;}
+#quick a img {width: 100px; height: auto; margin-top: 20px;}
