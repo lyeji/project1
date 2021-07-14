@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* reset */
+* {margin: 0; padding: 0;}
+body {background: #ffffff; color: #222328;}
+ul,li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none;}
+
+/* layout */
+#wrap {width: 1000px; margin: 0;}
+#wrap header {width: 200px; height: 650px; float: left;}
+#wrap section {width: 800px; height: 650px; float: left;}
+
+/* header */
+#wrap header .logo {width: 200px; height: 100px;}
+
+#wrap header .menu {width: 200px; height: 550px; background: #003f3c;}
+#wrap header .menu nav {width: 100%;}
+#wrap header .menu nav>ul>li {width: 100%; position: relative; 
+    box-sizing: border-box; text-align: center; border-bottom: 1px solid #003f3c;}
+#wrap header .menu nav>ul>li>a {display: block; background: #ffcc00; 
+    line-height: 50px; color: #003f3c; font-weight: bold;}
+#wrap header .menu nav>ul>li>a:hover {background: #003f3c; color: #fff;}
+
+#wrap header .menu nav ul.sub {width: 100%; height: auto; display: none; z-index: 9;
+    position: absolute; top: 0; left: 200px; background: #ffdf60;}
+#wrap header .menu nav ul.sub>li {width: 100%; height: auto; box-sizing: border-box; border-bottom: 1px solid #fff890;}
+#wrap header .menu nav ul.sub>li>a {width: 100%; height: 50px; display: block;
+    line-height: 50px; font-size: 14px; text-align: center; color: #121212;}
+#wrap header .menu nav ul.sub>li>a:hover {background: #afdfc7;}
+
+/* slider */
+#wrap section .slider {width: 800px; height: 350px; position: relative;
+    background: #ddd; float: left; overflow: hidden;}
+#wrap section .slider>div {position: absolute; top: 0;}
+#wrap section .slider .sliderList {width: 2400px;}
+#wrap section .slider .sliderList .sliderImg {float: left;}
+
+/* section */
+#wrap section .con {width: 800px; height: 200px;}
+#wrap section .con h1 {font-size: 18px; color: #222328; margin-top:5px;}
+
+/* notice */
+#wrap section .con1 {width: 270px; height: 200px; float: left;}
+#wrap section .con1 ul {margin-top: 10px; border-top: 1px solid #01926e;}
+#wrap section .con1 ul li {line-height: 31px; border-bottom: 1px dotted #ddd; padding: 0 5px 0 5px;}
+#wrap section .con1 ul li a {font-size: 13px; color: #222328;}
+#wrap section .con1 ul li span {font-size: 11px; float: right; color: #999;}
+
+/* gallery */
+#wrap section .con2 {width: 270px; height: 200px; background: #ddd; float: left;}
+#wrap section .con2 ul {margin-top: 20px;}
+#wrap section .con2 ul li {float: left; margin-left: 5px;}
+#wrap section .con2 ul li:nth-child(1) {margin-left: 9px;}
+
+#wrap section .con3 {width: 260px; height: 200px; background: #ddd666; float: left;}
+
+#wrap section footer {width: 800px; height: 100px;}
+#wrap section footer .blogo {width: 140px; height: 100px; float: left;}
+#wrap section footer .blogo img {width: 120px; height: auto; float: left; margin-top: 20px;}
+
+#wrap section footer .copy {width: 510px; height: 100px; padding-top: 30px; float: left;}
+#wrap section footer .copy p {text-align: center; font-size: 14px;}
+#wrap section footer .fs {width: 150px; height: 100px; float: left; padding-top: 28px;}
+
+#popup {width: 500px; height: 400px; background: #fff; display: none;
+    position: absolute; top: 150px; left: 300px; border: 4px solid #003f3c;}
+
+#popup p {text-align: center; border-bottom: 1px solid #003f3c;line-height: 40px; padding: 20px 0 20px 0;}
+#popup button {width: 30px; height: 30px; border:none; border-radius: 50%;
+    background: #003f3c; color: #fff; position: absolute; top: 20px; right: 20px;}
+#popup .contents {position: absolute; left: 30px; top: 150px; line-height: 40px;}

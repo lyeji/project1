@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pf</title>
+    <script src="script/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $(".btn1").on("click",function(){
+                $(".frame img").attr({"src":"images/01.jpg","alt":"01"});
+            });
+            $(".btn2").on("click",function(){
+                $(".frame img").attr({"src":"images/02.jpg","alt":"02"});
+            });
+            $(".btn3").on("click",function(){
+                $(".frame img").attr({"src":"images/03.jpg","alt":"03"});
+            });
+            $(".btn4").on("click",function(){
+                $(".frame img").attr({"src":"images/04.jpg","alt":"04"});
+            });
+            $(".btn5").on("click",function(){
+                $(".frame img").attr({"src":"images/05.jpg","alt":"05"});
+            });
+        });
+    </script>
+
+
+    <style>
+        *{margin: 0; padding: 0;}
+        body {background: #dedede; font-size: 15px;}
+        ul, li {margin: 0; padding: 0; list-style: none;}
+
+        #pf {position: absolute; top: 50%; left: 50%;
+            transform: translate(-50%, -50%);}
+        #pf .menu ul li {float: left;}
+        #pf .menu ul li a {text-decoration: none; background: #000; color: #fff; 
+            width: 130px; padding: 10px 0 10px 0; text-align: center; display: block;
+            margin-right: 3px; border-radius: 10px 10px 0 0; font-weight: bold;}
+        #pf .menu ul li a:hover {background: #666;}
+        #pf .menu ul li a:focus {background: #333;}
+        #pf .frame img {border:1px solid #333}
+    </style>
+    
+</head>
+<body>
+    <div id="pf">
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="btn1">황금비율</a></li>
+                <li><a href="#" class="btn2">서양회화</a></li>
+                <li><a href="#" class="btn3">입체원형</a></li>
+                <li><a href="#" class="btn4">컬러칩</a></li>
+                <li><a href="#" class="btn5">노을드로잉</a></li>
+            </ul>
+        </div>
+        <div class="frame">
+            <a href="#"><img src="images/01.jpg" alt="logo"></a>
+        </div>
+    </div>
+</body>
+</html>
