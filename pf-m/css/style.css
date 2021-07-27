@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* reset */
+*{margin: 0; padding: 0;}
+body {background: #2a3119; font-family: 'Baloo Tammudu 2';}
+ul, li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none;}
+
+/* header */
+header .menuTop {width: 100%; height: 70px; background: #222; position: fixed; font-weight: bold; z-index: 2;}
+header .menuTop ul {width: 1200px; height: 70px; margin: 0 auto; 
+    background: #222; color: #fff;}
+header .menuTop ul li {float: left; padding: 20px 47px;}
+header .menuTop ul li a {font-size: 18px; color: #ddd; display: block;}
+header .menuTop ul li a:hover {color: #b9da8d; text-shadow: 0 0 5px;}
+
+/* center */
+#center {width: 1200px; margin: 0 auto;}
+#center #a1 {width: 100%; height: 1000px; background: #000;}
+#center #a2 {width: 100%; height: 1000px; background: #000;}
+#center #a3 {width: 100%; height: 1000px; background: #000;}
+#center #a4 {width: 100%; height: 1000px; background: #000;}
+#center #a5 {width: 100%; height: 1000px; background: #000;}
+#center #a6 {width: 100%; height: 1000px; background: #000;}
+#center #a7 {width: 100%; height: 1000px; background: #fff;}
+#center #a8 {width: 100%; height: 1000px; background: #fff;}
+
+.title {position: absolute; top: 120px; left: 50px; 
+    font-size: 2em; font-weight: bold; color: #000; z-index: 1;}
+
+.box1 {width: 1200px; height: 1000px; position: relative;}
+.box2 {width: 1200px; height: 1000px; position: relative; 
+    background: url("../images/con2.jpg")no-repeat; box-shadow: 10px 10px 50px #444;}
+.box3 {width: 1200px; height: 1000px; position: relative; 
+    background: url("../images/con3.jpg")no-repeat; box-shadow: 10px 10px 50px #444;}
+.box4 {width: 1200px; height: 1000px; position: relative; 
+    background: url("../images/con4.jpg")no-repeat; box-shadow: 10px 10px 50px #444;}
+.box5 {width: 1200px; height: 1000px; position: relative; 
+    background: url("../images/con5.jpg")no-repeat; box-shadow: 10px 10px 50px #444;}
+.box6 {width: 1200px; height: 1000px; position: relative; 
+    background: url("../images/con6.jpg")no-repeat; box-shadow: 10px 10px 50px #444;}
+.box7 {width: 1200px; height: 1000px; position: relative; box-shadow: 10px 10px 30px #444;}
+.box8 {width: 1200px; height: 1000px; position: relative; 
+    background: url("../images/con8.png")no-repeat; box-shadow: 10px 10px 50px #444;}
+
+.box1 .con1 {width: 1200px; height: 1000px; 
+    overflow: hidden;}
+    
+.box1 .title_p {position: absolute; top:150px; left:7%; color:rgb(56, 90, 65); font-size: 4em;}
+.box1 .lyj {position: absolute; bottom:-30px; ; left:30%;}
+    
+.box7 img {position: absolute; top: 350px; left: 100px;}
+.box8 img {position: absolute; top:320px; left:223px;}
+
+/* quick */
+#quick {position: fixed; right: 0; top: 15%; 
+    background: #000; z-index: 4; box-shadow: 10px 10 50px; border: 1px solid gray; border-top-left-radius: 20px;}
+#quick ul {margin-top: 40px; box-shadow: 10px 10 50px; color: #fff;}
+#quick ul li a {display: block; color: gray; font-size: 1.5em; padding: 5px;}
+#quick ul li a:hover {color: #8aaf59; text-shadow: 1px 1px 7px;}
