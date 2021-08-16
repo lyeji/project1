@@ -77,6 +77,7 @@ body {font: normal 15px 'RalewayL'; color:#444;}
     background: url("../images/2323334.jpg");
     background-size: cover;
     padding-top: 70px;
+    min-width: 1400px;
     }
     
 #wrap section#portfolio .portfolio_main{
