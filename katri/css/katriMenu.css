@@ -183,5 +183,4 @@ footer {width: 100%; background: #394b61; clear: both;}
 
 .bfoot .footerL {width: 200px; padding-top: 34px; float: left;}
 .bfoot .footerL select {width: 135px; height: 28px; font-size: 12px; color: #767676; padding: 4px; margin-top: -3px;}
-.bfoot .footerL button {width: 51px; height: 28px; background: #eaeaea; border: none;}
-.bfoot .footerL button a { font-size: 12px; color: #444;}
+.bfoot .footerL button {width: 51px; height: 28px; background: #eaeaea; border: none; font-size: 12px; color: #444;}
