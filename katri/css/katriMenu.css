@@ -101,11 +101,11 @@ section #sliderSwiper~.mainbanr-pagination>li:last-child{margin-right: 0;}
 section #sliderSwiper~.mainbanr-pagination>li>a {
     display: block; width: 14px; height: 14px; text-indent:-9999px;}
 
-section #sliderSwiper~.mainbanr-pagination>.btn_auto {
-    position: absolute;  left:-25%; top: 0px; z-index: 50;
+section #sliderSwiper~.btn_auto {
+    position: absolute;  left:43.5%; top: 360px; z-index: 50;
     width: 20px; height: 20px;  text-indent:-99999px;
     background: url('../images/bt_control_stop_on.png')no-repeat;}
-section #sliderSwiper~.mainbanr-pagination>.btn_auto.pause {background: url('../images/bt_control_stop.png')no-repeat}
+section #sliderSwiper~.btn_auto.pause {background: url('../images/bt_control_stop.png')no-repeat}
 
 #roll {width: 100%; height: 300px;}
 #roll .roll_inner {padding-top: 50px; position: relative; width: 980px; margin: 0 auto;}
