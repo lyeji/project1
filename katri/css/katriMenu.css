@@ -55,7 +55,7 @@ ul.gnb .menu1 dl {float: left; width: 155px; height: 400px;
 ul.gnb .menu2 h3 {padding: 10px; background: #e8f1fe; font-weight: bold; color: #2a67a1; text-align: center;}
 ul.gnb .menu2 .first {float: left; padding-right: 40px;}
 ul.gnb .menu2 .scnd {float: right;}
-ul.gnb .menu2 li {float: left; height: 430px; padding: 20px; background-repeat: 1px solid #e8e8e8;}
+ul.gnb .menu2 li {float: left; height: 430px; padding: 20px; border: 1px solid #e8e8e8;}
 ul.gnb .menu2 .top {margin-top: 60px;}
 ul.gnb .menu3,
 ul.gnb .menu4,
